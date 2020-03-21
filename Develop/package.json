@@ -9,6 +9,7 @@
   "author": "Victoria Saleem",
   "license": "ISC",
   "dependencies": {
+    "inquirer": "^7.1.0",
     "uuid": "^7.0.2"
   },
   "devDependencies": {
