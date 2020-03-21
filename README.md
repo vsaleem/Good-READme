@@ -22,8 +22,8 @@ The PDF will be populated with the following:
 * Number of GitHub stars
 * Number of users following
 
-Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
 
+>## User Story
 ```
 AS A product manager
 
@@ -31,14 +31,16 @@ I WANT a developer profile generator
 
 SO THAT I can easily prepare reports for stakeholders
 ```
+```
+GIVEN the developer has a GitHub profile
 
-Refer to the [design mockup](./Assets/09-NodeJS-homework-demo.pdf).
+WHEN prompted for the developer's GitHub username and favorite color
 
-## Business Context
+THEN a PDF profile is generated
+```
 
-When preparing a report for stakeholders, it is important to have up-to-date information about members of the development team. Rather than navigating to each team member's GitHub profile, a command-line application will allow for quick and easy generation of profiles in PDF format.
 
-## Requirements
+## Min. Requirements
 
 * Functional, deployed application.
 
@@ -54,11 +56,4 @@ When preparing a report for stakeholders, it is important to have up-to-date inf
 
 * The background color of the generated PDF matches the color that the user provides.
 
-```
-GIVEN the developer has a GitHub profile
-
-WHEN prompted for the developer's GitHub username and favorite color
-
-THEN a PDF profile is generated
-```
 - - -
