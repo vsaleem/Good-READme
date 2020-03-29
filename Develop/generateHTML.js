@@ -25,8 +25,10 @@ const colors = {
   }
 };
 
-module.exports = generateHTML;
+module.exports.generateHTML = generateHTML;
+module.exports.colors = colors;
 
+// Write / Read info below 
 function generateHTML(data) {
   return `<!DOCTYPE html>
 <html lang="en">

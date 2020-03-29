@@ -4,67 +4,46 @@ const inquirer = require('inquirer');
 const path = require('path');
 const generateHTML = require('./generateHTML')
 const prompt = inquirer.createPromptModule();
-
-// STEP 1: The user will be prompted to enter GitHub Username and favorite color,
-// inquirer
-    // .prompt([
-    //     { type: 'input', 
-    //         message: 'What is your GitHub Username?', 
-    //         name: '',
-    //     },
-    //     { type: 'list', 
-    //         message: 'What is your favorite color?', 
-    //         name: '',
-    //         choices: [ /*Choices array or function returning a choices array*/],
-    //     }
-    // ])
-
-const questions = [
-    {   
-        type: 'input',
-        message: 'What is your GitHub Username?',
-        name: '',
-    },
-    {   
-        message: 'What is your favorite color?',
-    },
-];
-console.log(questions)
+const EventEmitter = require('events');
+const eventEmitter = new EventEmitter();
 
 
 
-// STEP 2: The user's answers will activate generator, 
-    prompt(questions).then(inquirer => {
-        //User feedback
-    })
-    // console.log(answers);
+// console.log(generateHTML.data); undefined
+// console.log(generateHTML.colors);
 
-    .catch(err => {
-        if(err.isTtyError) {
-            // For some reason the prompt couldn't be rendered
-        } else {
-            // Something else went wrong
+// STEP 2: The user will be prompted to enter GitHub Username and favorite color,
+inquirer
+    .prompt([
+        { 
+            type: 'input', 
+            message: 'What is your GitHub Username?', 
+            name: 'username'
+        },
+        { type: 'list', 
+            message: 'What is your favorite color?', 
+            name: 'favColor',
+            default: '#008f68',
+            choices: [ 'Red', 'Blue', 'Green', 'Pink', 'Glitter'],
         }
-    });
+    ])
+// BONUS:
+    // If Username is blank, catch err and throw response
+    // if(response.input === " " );
+    //     console.log("Username.");
+    // } else { 
+    //     prompt.list
+
+    // };
 
 
+// OKAY, TIME TO GENERATE FILE..... ASYNCRONIOUSLY!
+// STEP 3: The user's COLOR response will activate generator, WHICH will GENERATE NEW COLOR for background color for cards.
 
+/***/
 
-
-
-// STEP 3: THE COLOR SELECTION will be used as the background color for cards.
-
-// STEP 4: CREATE AND WRITE TO FILE: A .PDF doc will Populate with the following GitHub Account info:
-//CALL DATA
-
-//CREATES AND WRITES TO PDF
-// fs.writeFile(path.join(__dirname, './', 'UserProfile.pdf'),(generateHTML, data),err => {
-//     if (err) throw err;
-//     console.log('User Profile created!');
-// });
-
-// console.log(generateHTML);
-
+// STEP 4: //CALL generateHTML.js DATA to use for generator: 
+    // A .PDF doc will Populate with the following GitHub Account info:
     // * Profile image
     // * User name
     // * Links to the following:
@@ -76,6 +55,18 @@ console.log(questions)
         // * Number of followers
         // * Number of GitHub stars
         // * Number of users following
+
+
+// STEP 5: CREATES AND WRITES TO PDF
+// fs.writeFile(path.join(__dirname, './', 'UserProfile.pdf'),(generateHTML),err => {
+//     if (err) throw err;
+
+//     else {
+//     console.log('User Profile created!');
+// }});
+
+// console.log(generateHTML);
+
 
 
 
