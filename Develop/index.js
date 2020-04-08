@@ -1,20 +1,23 @@
 // STEP 1: SET UP NODE MODULES LIBRARIES
 const fs = require('fs');
 const inquirer = require('inquirer');
-const path = require('path');
-const generateHTML = require('./generateHTML')
-const prompt = inquirer.createPromptModule();
+const generateMarkdown = require('./utils/generateMarkdown.js')
 const EventEmitter = require('events');
-const eventEmitter = new EventEmitter();
+const axios = require('axios');
+const util = require("util");
+// const prompt = inquirer.createPromptModule();
+const writeFileAsync = util.promisify(fs.writeFile);
+
+///////////////////
 
 
-
-// console.log(generateHTML.data); undefined
-// console.log(generateHTML.colors);
-
+console.log('Lets make your resume!!');
 // STEP 2: The user will be prompted to enter GitHub Username and favorite color,
-inquirer
-    .prompt([
+
+// let answerBox
+
+function promptUser(){
+    return inquirer.prompt([
         { 
             type: 'input', 
             message: 'What is your GitHub Username?', 
@@ -24,57 +27,47 @@ inquirer
             message: 'What is your favorite color?', 
             name: 'favColor',
             default: '#008f68',
-            choices: [ 'Red', 'Blue', 'Green', 'Pink', 'Glitter'],
-        }
-    ])
-// BONUS:
-    // If Username is blank, catch err and throw response
-    // if(response.input === " " );
-    //     console.log("Username.");
-    // } else { 
-    //     prompt.list
+            choices: [ 'Red', 'Blue', 'Green', 'Pink'],
+        },
+    ]) 
+        // .then(function(results){
+        //     answerBox = results
+        //     console.log(answerBox)
+        // })    
+    };
+        
 
-    // };
+    // console.log('Okkkkk! Time to generate your profile!')
 
+    function init(response){            
 
-// OKAY, TIME TO GENERATE FILE..... ASYNCRONIOUSLY!
-// STEP 3: The user's COLOR response will activate generator, WHICH will GENERATE NEW COLOR for background color for cards.
+            const url = `https://api.github.com/users/${response.username}`;
+            let answers = response
+        
+            axios.get(url).then(function(data){
+              let followers = data.data.followers;
+              let location = data.data.location;
+              let bioImg = data.data.avatar_url;
+              let readmeFile = generateMarkdown(answers, followers, location, bioImg)
+              fs.writeFile("README.md", readmeFile, function(error){
+                  if(error){
+                      throw error;
+                  }else{
+                      console.log("it worked!!")
+                  }
+              })
+        })
+    };
+    promptUser().then((results)=>{
+        init(results);
+    });
 
-/***/
+    // then(
+    // async function init() {
 
-// STEP 4: //CALL generateHTML.js DATA to use for generator: 
-    // A .PDF doc will Populate with the following GitHub Account info:
-    // * Profile image
-    // * User name
-    // * Links to the following:
-        //   * User location via Google Maps
-        //   * User GitHub profile
-        //   * User blog
-    // * User bio
-        // * Number of public repositories
-        // * Number of followers
-        // * Number of GitHub stars
-        // * Number of users following
-
-
-// STEP 5: CREATES AND WRITES TO PDF
-// fs.writeFile(path.join(__dirname, './', 'UserProfile.pdf'),(generateHTML),err => {
-//     if (err) throw err;
-
-//     else {
-//     console.log('User Profile created!');
-// }});
-
-// console.log(generateHTML);
-
-
-
-
-
-// function writeToFile(fileName, data) {
- 
-// }
-
-// function init() {
-
-// init();
+    //     const answers = await favColor();
+    //     answers.favColor = answers.favColor.EventEmitter("");
+    //     return answers;
+    // })
+    //     console.log(answers);
+    // init();
