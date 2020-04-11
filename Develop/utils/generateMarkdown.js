@@ -9,9 +9,9 @@ ${data.description}
 
 ## TABLE OF CONTENTS
 
-* (#DESCRIPTION)
-* (#INSTALLATION)
-* (#USAGE)
+* # DESCRIPTION
+* # INSTALLATION
+* # USAGE
 * (#LICENSE)
 * (#CONTRIBUTORS)
 * (#TESTS)
