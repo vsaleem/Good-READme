@@ -1,9 +1,9 @@
 
-# Good ReadMe Generator
+# 
 
 ## DESCRIPTION
 
-This project creates a README.md doc by answering a few questions.
+
 
 
 ## TABLE OF CONTENTS
@@ -20,7 +20,7 @@ This project creates a README.md doc by answering a few questions.
 
 ## Installation
 
-You must intall node.js and npm libraries.
+
 
 ## Usage
 
@@ -28,11 +28,11 @@ You must intall node.js and npm libraries.
 
 ## License
 
-None
+Apache License 2.0
 
 ## Contributors
 
-No
+
 
 ## Tests
 
@@ -46,11 +46,11 @@ No
 
   ### FOLLOW ME ON GITHUB
   ![bioImage](https://avatars0.githubusercontent.com/u/59583325?v=4&s=200)
-  * vic.saleem@gmail.com
+  * 
 
   ![followers](https://img.shields.io/badge/Followers-8-success) 
   
-  ![location](https://img.shields.io/badge/Location-Downtown Baltimore-ff69b4) 
+  ![location](https://img.shields.io/badge/Location-Downtown_Baltimore-ff69b4) 
 
    
 
