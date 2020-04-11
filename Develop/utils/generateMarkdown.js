@@ -12,10 +12,12 @@ ${data.description}
 * # DESCRIPTION
 * # INSTALLATION
 * # USAGE
-* (#LICENSE)
-* (#CONTRIBUTORS)
-* (#TESTS)
-* (#QUESTIONS)
+* # LICENSE
+* # CONTRIBUTORS
+* # TESTS
+* # QUESTIONS
+
+
 
 
 ## Installation
@@ -37,11 +39,11 @@ ${data.description}
 
 
 
-  * (#FOLLOW ME ON GITHUB - PROFILE)
+  * FOLLOW ME ON GITHUB
   ![bioImage](${bioImage}&s=200)
 
   ![followers](https://img.shields.io/badge/Followers-${followers}-brightgreen)
-  ![location](https://img.shields.io/badge/Location-${location}-pink)
+  ![location](https://img.shields.io/badge/Location-${location}-brightpink)
   * GITHUB EMAIL
 
 `;
