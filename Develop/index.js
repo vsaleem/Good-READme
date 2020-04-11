@@ -36,13 +36,13 @@ function promptUser(){
         {
             type: 'input',
             message: 'Do you want to include installation instructions? If so, please describe.',
-            name: 'description'
+            name: 'install'
         },
 
         {
             type: 'input',
             message: 'Describe any information about the potential usage for the project.',
-            name: 'description'
+            name: 'usage'
         },
 
         {

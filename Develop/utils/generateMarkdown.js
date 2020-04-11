@@ -9,41 +9,48 @@ ${data.description}
 
 ## TABLE OF CONTENTS
 
-* # DESCRIPTION
-* # INSTALLATION
-* # USAGE
-* # LICENSE
-* # CONTRIBUTORS
-* # TESTS
-* # QUESTIONS
+*  DESCRIPTION
+*  INSTALLATION
+*  USAGE
+*  LICENSE
+*  CONTRIBUTORS
+*  TESTS
+*  QUESTIONS
 
 
 
 
 ## Installation
 
+${data.install}
 
 ## Usage
 
+${data.usage}
 
 ## License
 
+${data.license}
 
 ## Contributors
 
+${data.contributors}
 
 ## Tests
+
+${data.test}
 
 
 ## Questions
 
+${data.questions}
 
 
   * FOLLOW ME ON GITHUB
   ![bioImage](${bioImage}&s=200)
 
-  ![followers](https://img.shields.io/badge/Followers-${followers}-brightgreen)
-  ![location](https://img.shields.io/badge/Location-${location}-brightpink)
+  ![followers](https://img.shields.io/badge/Followers-${followers}-success)
+  ![location](https://img.shields.io/badge/Location-${location}-ff69b4)
   * GITHUB EMAIL
 
 `;
