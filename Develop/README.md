@@ -1,9 +1,9 @@
 
-# GOOD
+# Good Burger
 
 ## DESCRIPTION
 
-generator
+
 
 
 ## TABLE OF CONTENTS
@@ -20,7 +20,7 @@ generator
 
 ## Installation
 
-no
+
 
 ## Usage
 
@@ -28,7 +28,7 @@ no
 
 ## License
 
-None
+Apache License 2.0
 
 ## Contributors
 
@@ -46,11 +46,12 @@ None
 
   ### FOLLOW ME ON GITHUB
   ![bioImage](https://avatars0.githubusercontent.com/u/59583325?v=4&s=200)
-  * vic.saleem@gmail.com
+  * 
 
   ![followers](https://img.shields.io/badge/Followers-8-success) 
   
-  ![followers](https://img.shields.io/badge/Followers-8-ff69b4) 
+  ![location](https://img.shields.io/badge/Location-Baltimore, MD-ff69b4) 
 
-  
+   
+
 
