@@ -2,16 +2,14 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js')
-const EventEmitter = require('events');
 const axios = require('axios');
 const util = require("util");
-// const prompt = inquirer.createPromptModule();
-const writeFileAsync = util.promisify(fs.writeFile);
+// const writeFileAsync = util.promisify(fs.writeFile);
 
 ///////////////////
 
 console.log('Lets make your resume!!');
-// STEP 2: The user will be prompted to enter GitHub Username and favorite color,
+// STEP 2: The user will be prompted to answer the following questions
 
 function promptUser(){
     return inquirer.prompt([
@@ -93,6 +91,7 @@ function promptUser(){
     };
         
     // console.log('Okkkkk! Time to generate your profile!')
+    // STEP 3: This function uses the answers from the user to activate the README Generator
     function init(response){            
 
             const url = `https://api.github.com/users/${response.username}`;
@@ -116,6 +115,14 @@ function promptUser(){
         init(results);
     });
 
+
+
+// NOTE TO SELF -LAST STEPS:
+    // Look at homework requirements +++++Write questions you need 
+    // Look at data that you get back from gitHub. Ex. Profile picture, etc.
+    // Structure readme correctly!!! Needs Table of Contents etc...
+    
+// BONUS: CREATE PROMPT TO CHANGE THE FONT AND COLOR OF THE README BY SELECTING FAVORITE COLOR.
     // then(
     // async function init() {
 
@@ -126,6 +133,3 @@ function promptUser(){
     //     console.log(answers);
     // init();
 
-        // Look at homework requirements +++++Write questions you need 
-        // Look at data that you get back from gitHub. Ex. Profile picture, etc.
-        // Structure readme correctly!!! Needs Table of Contents etc...
