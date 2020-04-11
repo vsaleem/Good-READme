@@ -14,8 +14,6 @@ const writeFileAsync = util.promisify(fs.writeFile);
 console.log('Lets make your resume!!');
 // STEP 2: The user will be prompted to enter GitHub Username and favorite color,
 
-// let answerBox
-
 function promptUser(){
     return inquirer.prompt([
         { 
@@ -23,22 +21,79 @@ function promptUser(){
             message: 'What is your GitHub Username?', 
             name: 'username'
         },
-        { type: 'list', 
+
+        {
+            type: 'input',
+            message: 'What is your project title name?',
+            name: 'title'
+        },
+
+        {
+            type: 'input',
+            message: 'Describe your project in 3 sentences or less.',
+            name: 'description'
+        },
+        
+        {
+            type: 'input',
+            message: 'Do you want to include installation instructions? If so, please describe.',
+            name: 'description'
+        },
+
+        {
+            type: 'input',
+            message: 'Describe any information about the potential usage for the project.',
+            name: 'description'
+        },
+
+        {
+            type: 'list', 
+            message: 'Would you like to include a license for this project?', 
+            name: 'license',
+            default: '',
+            choices: [ 'Apache License 2.0',
+                        'GNU General Public License v3.0',
+                        'MIT License',
+                        'Mozilla Public License 2.0',
+                        'None' ],  
+        },
+
+        { 
+            type: 'list', 
             message: 'What is your favorite color?', 
             name: 'favColor',
             default: '#008f68',
             choices: [ 'Red', 'Blue', 'Green', 'Pink'],
+        }, 
+
+        {
+            type: 'input',
+            message: 'Would you like to include any contributors?',
+            name: 'contributors'
         },
+
+        {
+            type: 'input',
+            message: 'Do you want to include any testing information?',
+            name: 'test'
+        },
+
+        {
+            type: 'input',
+            message: 'Almost done......... What is your email address?',
+            name: 'email'
+        },
+
+        {
+            type: 'input',
+            message: 'Finally......... Do you want to include any questions or concerns about the project?',
+            name: 'questions'
+        },
+
     ]) 
-        // .then(function(results){
-        //     answerBox = results
-        //     console.log(answerBox)
-        // })    
     };
         
-
     // console.log('Okkkkk! Time to generate your profile!')
-
     function init(response){            
 
             const url = `https://api.github.com/users/${response.username}`;
@@ -71,3 +126,7 @@ function promptUser(){
     // })
     //     console.log(answers);
     // init();
+
+        // Look at homework requirements +++++Write questions you need 
+        // Look at data that you get back from gitHub. Ex. Profile picture, etc.
+        // Structure readme correctly!!! Needs Table of Contents etc...
