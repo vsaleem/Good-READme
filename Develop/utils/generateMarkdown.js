@@ -46,11 +46,11 @@ ${data.test}
 ${data.questions}
 
 
-  * FOLLOW ME ON GITHUB
+  * ### FOLLOW ME ON GITHUB
   ![bioImage](${bioImage}&s=200)
 
   ![followers](https://img.shields.io/badge/Followers-${followers}-success)
-  ![location](https://img.shields.io/badge/Location-${location}-ff69b4)
+  ![location](https://img.shields.io/badge/Location-${location}-informational)
   * GITHUB EMAIL
 
 `;
