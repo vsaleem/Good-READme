@@ -1,9 +1,9 @@
 
-# vsaleem
+# GRMG
 
 ## DESCRIPTION
 
-Made a readme generator
+Made a readme
 
 
 ## TABLE OF CONTENTS
@@ -20,11 +20,11 @@ Made a readme generator
 
 ## Installation
 
-no
+Nope
 
 ## Usage
 
-no
+
 
 ## License
 
@@ -36,19 +36,22 @@ No
 
 ## Tests
 
-no
+NO
 
 
 ## Questions
 
-No
+no
 
 
-  * ### FOLLOW ME ON GITHUB
+  ### FOLLOW ME ON GITHUB
   ![bioImage](https://avatars0.githubusercontent.com/u/59583325?v=4&s=200)
+  * vic.saleem@gmail.com
 
-  ![followers](https://img.shields.io/badge/Followers-8-success)
+  ![followers](https://img.shields.io/badge/Followers-8-success) 
+  
+  ![followers](https://img.shields.io/badge/Followers-8-success) 
+
   ![location](https://img.shields.io/badge/Location-Baltimore, MD-informational)
   
-  * vic.saleem@gmail.com
 
