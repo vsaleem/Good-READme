@@ -1,9 +1,9 @@
 
-# GRMG
+# GOOD
 
 ## DESCRIPTION
 
-Made a readme
+generator
 
 
 ## TABLE OF CONTENTS
@@ -20,7 +20,7 @@ Made a readme
 
 ## Installation
 
-Nope
+no
 
 ## Usage
 
@@ -32,16 +32,16 @@ None
 
 ## Contributors
 
-No
+
 
 ## Tests
 
-NO
+
 
 
 ## Questions
 
-no
+
 
 
   ### FOLLOW ME ON GITHUB
@@ -50,8 +50,7 @@ no
 
   ![followers](https://img.shields.io/badge/Followers-8-success) 
   
-  ![followers](https://img.shields.io/badge/Followers-8-success) 
+  ![followers](https://img.shields.io/badge/Followers-8-ff69b4) 
 
-  ![location](https://img.shields.io/badge/Location-Baltimore, MD-informational)
   
 

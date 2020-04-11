@@ -51,9 +51,8 @@ ${data.questions}
 
   ![followers](https://img.shields.io/badge/Followers-${followers}-success) 
   
-  ![followers](https://img.shields.io/badge/Followers-${followers}-success) 
+  ![followers](https://img.shields.io/badge/Followers-${followers}-ff69b4) 
 
-  ![location](https://img.shields.io/badge/Location-${location}-informational)
   
 
 `;
