@@ -1,59 +1,57 @@
-# Unit 09 Node.js and ES6+ Homework: Developer Profile Generator
 
-Create a command-line application that dynamically generates a PDF profile from a GitHub username. The application will be invoked with the following command:
+# Good README.md Generator
 
-```sh
-node index.js
-```
+## DESCRIPTION
 
-The user will be prompted for a favorite color, which will be used as the background color for cards.
-
-The PDF will be populated with the following:
-
-* Profile image
-* User name
-* Links to the following:
-  * User location via Google Maps
-  * User GitHub profile
-  * User blog
-* User bio
-* Number of public repositories
-* Number of followers
-* Number of GitHub stars
-* Number of users following
+This project uses a command-line application that dynamically generates a README.md file by information prompted by the user and from the user's GitHub account. This application is invoked with the following command: "node index"
 
 
->## User Story
-```
-AS A product manager
+## TABLE OF CONTENTS
 
-I WANT a developer profile generator
-
-SO THAT I can easily prepare reports for stakeholders
-```
-```
-GIVEN the developer has a GitHub profile
-
-WHEN prompted for the developer's GitHub username and favorite color
-
-THEN a PDF profile is generated
-```
+* [Description](#Description)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributors](#Contributors)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
 
-## Min. Requirements
 
-* Functional, deployed application.
+## Installation
 
-* GitHub repository with a unique name and a README describing project.
+You must install Node.js and nmp libraries.
 
-* The application generates a PDF resume from the user provided GitHub profile.
+## Usage
 
-* The generated resume includes a bio image from the user's GitHub profile.
+No
 
-* The generated resume includes the user's location and a link to their GitHub profile.
+## License
 
-* The generated resume includes the number of: public repositories, followers, GitHub stars and following count.
+None
 
-* The background color of the generated PDF matches the color that the user provides.
+## Contributors
 
-- - -
+No
+
+## Tests
+
+No
+
+
+## Questions
+
+No
+
+
+  ### FOLLOW ME ON GITHUB
+  ![bioImage](https://avatars0.githubusercontent.com/u/59583325?v=4&s=200)
+  * vic.saleem@gmail.com
+
+  ![followers](https://img.shields.io/badge/Followers-8-success) 
+  
+  ![location](https://img.shields.io/badge/Location-Downtown_Baltimore_Maryland-ff69b4) 
+
+   
+
+
