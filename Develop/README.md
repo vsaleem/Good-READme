@@ -3,18 +3,20 @@
 
 ## DESCRIPTION
 
-I made a generator to help me to quick generate a readme doc.
+I made a generator to help me to quickly generator a README.md doc.
 
 
 ## TABLE OF CONTENTS
 
-* (#DESCRIPTION)
-* (#INSTALLATION)
-* (#USAGE)
-* (#LICENSE)
-* (#CONTRIBUTORS)
-* (#TESTS)
-* (#QUESTIONS)
+* # DESCRIPTION
+* # INSTALLATION
+* # USAGE
+* # LICENSE
+* # CONTRIBUTORS
+* # TESTS
+* # QUESTIONS
+
+
 
 
 ## Installation
@@ -36,10 +38,10 @@ I made a generator to help me to quick generate a readme doc.
 
 
 
-  * (#FOLLOW ME ON GITHUB - PROFILE)
+  * FOLLOW ME ON GITHUB
   ![bioImage](https://avatars0.githubusercontent.com/u/59583325?v=4&s=200)
 
   ![followers](https://img.shields.io/badge/Followers-8-brightgreen)
-  ![location](https://img.shields.io/badge/Location-Baltimore, MD-pink)
+  ![location](https://img.shields.io/badge/Location-Baltimore, MD-brightpink)
   * GITHUB EMAIL
 

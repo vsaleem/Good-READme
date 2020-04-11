@@ -10,7 +10,6 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 ///////////////////
 
-
 console.log('Lets make your resume!!');
 // STEP 2: The user will be prompted to enter GitHub Username and favorite color,
 
