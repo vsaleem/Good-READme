@@ -9,14 +9,13 @@ ${data.description}
 
 ## TABLE OF CONTENTS
 
-*  DESCRIPTION
-*  INSTALLATION
-*  USAGE
-*  LICENSE
-*  CONTRIBUTORS
-*  TESTS
-*  QUESTIONS
-
+* [Description](#Description)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [License](#License)
+* [Contributors](#Contributors)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
 
 
@@ -51,7 +50,8 @@ ${data.questions}
 
   ![followers](https://img.shields.io/badge/Followers-${followers}-success)
   ![location](https://img.shields.io/badge/Location-${location}-informational)
-  * GITHUB EMAIL
+  
+  * ${data.email}
 
 `;
 }
