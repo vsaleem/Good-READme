@@ -20,7 +20,7 @@ This project uses a command-line application that dynamically generates a README
 
 ## Installation
 
-You must install Node.js and nmp libraries.
+You must install Node.js and npm libraries.
 
 ## Usage
 
