@@ -13,10 +13,6 @@ This project uses a command-line application that dynamically generates a README
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [License](#License)
-* [Contributors](#Contributors)
-* [Tests](#Tests)
-* [Questions](#Questions)
-
 
 
 ## Installation
