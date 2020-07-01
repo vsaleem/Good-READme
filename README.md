@@ -5,6 +5,7 @@
 
 This project uses a command-line application that dynamically generates a README.md file by information prompted by the user and from the user's GitHub account. This application is invoked with the following command: "node index"
 
+![Image of Command-Line-Interface Application](http://localhost:3000/VSaleem-Full-Stack-Portfolio/static/media/CLI%20-%20Readme%20-%20App%20-%20Screen%20Shot.d306f04d.png)
 
 ## TABLE OF CONTENTS
 
